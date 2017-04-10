@@ -561,15 +561,21 @@
       <script>
       /* global $ */
         function formSubmit(){
+          
+          console.log($('#name').text());
+          
+          
+          
+          
           $.ajax({
         url: '/contact',
         type:'POST',
         data:
         {
-            name: $('#name').text(),
-            email: $('#email').text(),
-            subject: $('#subject').text(),
-            message: $('#message').text()
+            name: $('#name').val(),
+            email: $('#email').val(),
+            subject: $('#subject').val(),
+            message: $('#message').val()
         },
         success: function(msg)
         {
