@@ -1,0 +1,27 @@
+{
+  "name": "pauric-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^0.2.10",
+    "body-parser": "^1.17.1",
+    "express": "^3.21.2",
+    "nodemailer": "^4.0.0",
+    "socket.io": "^0.9.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hpauric/pauric-portfolio.git"
+  },
+  "author": "Pauric Holleran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hpauric/pauric-portfolio/issues"
+  },
+  "homepage": "https://github.com/Hpauric/pauric-portfolio#readme"
+}
