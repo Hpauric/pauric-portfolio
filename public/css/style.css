@@ -1740,7 +1740,7 @@ header.coporate-header .is-sticky .sticky .ownmenu > li > .megamenu {
 	position: absolute;
     height: 100px;
     width: 100%;
-    top: 40%;
+    top: 30%;
     left: 0;
     text-align: center;
 	font-size: 120px;
@@ -3192,6 +3192,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 }
 .contact.style-3 .contact-form button:hover {
 	border: 2px solid #eeb013;
+	color: white;
 }
 .bg-parallax.style-4 h2 {
 	font-size: 48px;

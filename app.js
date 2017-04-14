@@ -34,8 +34,6 @@ app.post('/contact', function(req, res) {
   };
 
   smtpTrans.sendMail(mailOpts, function(error, response) {
-
-    //res.sendFile(path.join(__dirname + '/public/index.html'));
     
     //Email not sent
     if (error) {
@@ -43,7 +41,6 @@ app.post('/contact', function(req, res) {
     }
     
     res.end();
-      //res.sendFile(path.join(__dirname + '/public/index.html'));
   });
 
 });
