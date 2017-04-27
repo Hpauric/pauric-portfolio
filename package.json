@@ -19,6 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/Hpauric/pauric-portfolio.git"
   },
+  "engines": {
+    "node": ">6.9.4"
+  },
   "author": "Pauric Holleran",
   "license": "ISC",
   "bugs": {
