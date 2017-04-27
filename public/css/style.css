@@ -1738,28 +1738,26 @@ header.coporate-header .is-sticky .sticky .ownmenu > li > .megamenu {
 }
 .portfolio-overlay.style-3 .eye-link,
 .portfolio-overlay.style-3 .github-link{
-	position: absolute;
-    height: 100px;
-    width: 100%;
+    width: 50%;
     top: 30%;
-    
-    text-align: center;
 	font-size: 120px;
 	background: none;
 	color: rgba(255,255,255,0.3);
 }
 
 .portfolio-overlay.style-3 .eye-link {
-left: 20%;
+left: 50%;
+margin-left: 20px;
 }
 
 .portfolio-overlay.style-3 .github-link {
-left: -20%;
+left: 0;
+margin-right: 20px;
 }
 
 
-.portfolio-overlay.style-3 .eye-link:hover,
-.portfolio-overlay.style-3 .github-link:hover {
+.fa-eye:hover, 
+.fa-github:hover {
 	color: #fff;
 }
 .portfolio-image img {
