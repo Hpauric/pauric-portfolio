@@ -189,12 +189,12 @@ $("a[data-filter='.pf-api-design']").click(function(){
 	//$('.pf-api-design').css("animation-name", "fadeInUp !important");
 //	$('.pf-api-design').removeClass("animate");
 	alreadyClicked = true;
-	console.log($('.pf-api-design'));
+	//console.log($('.pf-api-design'));
 //	wow.offset = 5000;
 	}
 });
 $("a[data-filter='.pf-responsive-design']").click(function(){
-	wow.offset = 5000;
+	//wow.offset = 5000;
 });
 $("a[data-filter='.pf-api-design']").click(function(){
 //	wow.offset = 5000;
@@ -224,7 +224,15 @@ $('.portfolio-filter li a').on('click', function () {
     var selector = $(this).attr('data-filter');
     //$(selector).addClass("animated");
     $(selector).removeClass("animate");
+    //$(selector).removeClass("flipInY");
+    
+    //$(selector).removeClass("flipInX");
+    $(selector).removeAttr( "data-wow-delay" );
+    $(selector).css("animation-name", "");
+    $(selector).css("animation-delay", "");
     $(selector).css("visibility", "visible");
+    //wow.sync();
+    //console.log(wow);
     console.log($(selector));
     $container.isotope({
       filter: selector
