@@ -1750,6 +1750,15 @@ left: 50%;
 margin-left: 20px;
 }
 
+.portfolio-overlay.style-3 .eye-center {
+margin: 0 auto;
+width: 50%;
+	font-size: 120px;
+	background: none;
+	color: rgba(255,255,255,0.3);
+}
+
+
 .portfolio-overlay.style-3 .github-link {
 left: 0;
 margin-right: 20px;

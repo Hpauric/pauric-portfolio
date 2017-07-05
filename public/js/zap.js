@@ -171,13 +171,43 @@ jQuery('.tp-banner-fix').show().revolution({
 /*-----------------------------------------------------------------------------------*/
 /* 	ANIMATION
 /*-----------------------------------------------------------------------------------*/
+
 var wow = new WOW({
     boxClass:     'animate',      // animated element css class (default is wow)
     animateClass: 'animated', // animation css class (default is animated)
     offset:       100,          // distance to the element when triggering the animation (default is 0)
     mobile:       false        // trigger animations on mobile devices (true is default)
 });
-wow.init();
+wow.init(); 
+
+var alreadyClicked = false;
+
+$("a[data-filter='.pf-api-design']").click(function(){
+	
+	if(!alreadyClicked){
+	//	$('.pf-api-design').css("visibility", "visible !important");
+	//$('.pf-api-design').css("animation-name", "fadeInUp !important");
+//	$('.pf-api-design').removeClass("animate");
+	alreadyClicked = true;
+	console.log($('.pf-api-design'));
+//	wow.offset = 5000;
+	}
+});
+$("a[data-filter='.pf-responsive-design']").click(function(){
+	wow.offset = 5000;
+});
+$("a[data-filter='.pf-api-design']").click(function(){
+//	wow.offset = 5000;
+});
+$("a[data-filter='.pf-interactive']").click(function(){
+//	wow.offset = 5000;
+});
+$("a[data-filter='.pf-node-js']").click(function(){
+//	wow.offset = 5000;
+});
+
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	ISOTOPE PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
@@ -192,6 +222,10 @@ $('.portfolio-filter li a').on('click', function () {
     $('.portfolio-filter li a').removeClass('active');
     $(this).addClass('active');
     var selector = $(this).attr('data-filter');
+    //$(selector).addClass("animated");
+    $(selector).removeClass("animate");
+    $(selector).css("visibility", "visible");
+    console.log($(selector));
     $container.isotope({
       filter: selector
     });
