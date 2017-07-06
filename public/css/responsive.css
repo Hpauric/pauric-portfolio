@@ -808,6 +808,21 @@ header .language {
 }
 }
 @media(max-width:540px) {
+	
+
+
+.portfolio-overlay.style-3 .eye-link, 
+.portfolio-overlay.style-3 .github-link {
+    font-size: 80px;
+}	
+	.portfolio-overlay.style-3 .eye-center {
+		font-size: 90px;
+	}
+	
+	
+	
+	
+	
 .small-r-items .media {
 	width: 100%;
 }
