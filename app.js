@@ -38,6 +38,8 @@ app.post('/contact', function(req, res) {
     //Email not sent
     if (error) {
       console.log(error);
+      console.log("mail details:");
+      console.log(mailOpts);
     }
     
     res.end();
