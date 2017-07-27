@@ -3,10 +3,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const nodemailer = require('nodemailer');
-
+const compression = require('compression')
 const bodyParser = require('body-parser');
 
-
+app.use(compression());
 app.use(bodyParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
