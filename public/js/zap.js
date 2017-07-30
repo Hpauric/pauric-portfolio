@@ -17,29 +17,6 @@ $(".sticky").sticky({topSpacing:0});
 /*-----------------------------------------------------------------------------------*/
 $('.full-screen').superslides({});
 /*-----------------------------------------------------------------------------------*/
-/* 	TEAM SLIDER 
-/*-----------------------------------------------------------------------------------*/
-$(".team-slider").owlCarousel({ 
-	autoplay:false,
-	autoplayHoverPause:true,
-	singleItem	: true,
-	navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-	lazyLoad:true,
-	nav: true,
-	loop:true,
-	margin:30,
-	responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1200:{
-            items:3,
-        }}
-});
-/*-----------------------------------------------------------------------------------*/
 /* 	SINGLE SLIDE
 /*-----------------------------------------------------------------------------------*/
 $(".single-slides").owlCarousel({ 
