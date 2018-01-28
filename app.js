@@ -30,7 +30,7 @@ app.post('/contact', function(req, res) {
     from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
     to: 'pauric.holleran2@gmail.com',
     subject: req.body.subject,
-    text: req.body.email + `\n` + req.body.message
+    text: req.body.name + `\n` + req.body.email + `\n` + req.body.message
   };
 
   smtpTrans.sendMail(mailOpts, function(error, response) {
