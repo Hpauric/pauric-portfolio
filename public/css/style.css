@@ -1604,6 +1604,7 @@ header.coporate-header .is-sticky .sticky .ownmenu > li > .megamenu {
 }
 .portfolio-overlay h3, .portfolio-overlay span {
 	color: #FFFFFF;
+	/* padding: 0 5px; */
 }
 .portfolio-overlay h3 > a, .portfolio-overlay span > a {
 	color: inherit;
@@ -1658,6 +1659,15 @@ header.coporate-header .is-sticky .sticky .ownmenu > li > .megamenu {
 	font-size: 18px;
 	color: #8a8a8a;
 }
+
+.portfolio-overlay.style-3 .detail-info {
+	padding: 0 10px;
+}
+
+
+
+
+
 .portfolio-overlay.style-4 {
 	background: none;
 	border: 35px solid;
