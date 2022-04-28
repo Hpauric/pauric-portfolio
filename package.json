@@ -4,7 +4,7 @@
   "description": "portfolio",
   "main": "app.js",
   "dependencies": {
-    "async": "^0.2.10",
+    "async": "^2.6.4",
     "body-parser": "^1.17.1",
     "compression": "^1.7.0",
     "express": "^3.21.2",
